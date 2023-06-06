@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-poppins;
+}
+.hamburger-line {
+  @apply block w-6 h-1 bg-dark my-1 mx-auto transition-all duration-300 ease-in-out;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply opacity-0;
+}
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45 translate-y-2
+  /* @apply transform: translateY(8px) rotate(45deg); */;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45 -translate-y-2;
+}
+.navbar-active {
+  @apply scale-100;
+}
